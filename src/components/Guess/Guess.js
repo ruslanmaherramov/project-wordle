@@ -13,7 +13,7 @@ function Cell({ letter, status }) {
 }
 
 function Guess({ value, answer }) {
-  const result = checkGuess(value ?? '', answer);
+  const result = checkGuess(value, answer);
 
   return (
     <p className="guess">
